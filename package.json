@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "deploy":"gh-pages -d www"
+    "deploy":"ionic build --prod && gh-pages -d www/browser --cname 'kanout.no'"
   },
   "private": true,
   "dependencies": {
