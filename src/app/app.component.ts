@@ -63,8 +63,8 @@ import {
 })
 export class AppComponent {
   public appPages = [
-    { title: 'CV', url: 'home', icon: 'document' },
-    {title: 'About', url: 'about', icon: 'person'}
+    {title: 'Profil', url: 'about', icon: 'person'},
+    { title: 'Kompetanse', url: 'home', icon: 'document' },
   ];
   constructor() {
     addIcons({ 
