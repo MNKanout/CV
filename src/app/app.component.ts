@@ -36,6 +36,9 @@ import {
   document,
   documentOutline,
   documentSharp,
+  person,
+  personAddOutline,
+  personSharp,
  } from 'ionicons/icons';
 
 @Component({
@@ -61,6 +64,7 @@ import {
 export class AppComponent {
   public appPages = [
     { title: 'CV', url: 'home', icon: 'document' },
+    {title: 'About', url: 'about', icon: 'person'}
   ];
   constructor() {
     addIcons({ 
@@ -81,6 +85,9 @@ export class AppComponent {
       document,
       documentOutline,
       documentSharp,
+      person,
+      personAddOutline,
+      personSharp,
      });
   }
 }
