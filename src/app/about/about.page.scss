@@ -1,0 +1,50 @@
+.profile-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: column; /* small screens: image on top, summary below */
+  }
+  
+  /* On md (768px) and up:
+     1) Put the picture on the right
+     2) Ensure both columns match the same height (250px)
+  */
+  @media (min-width: 768px) {
+    .profile-row {
+      flex-direction: row-reverse; 
+      min-height: 250px; /* or exactly height: 250px if you want a strict height */
+    }
+  
+    /* Make the summary fill the available space. */
+    .summary-container ion-card {
+      /* 
+        If you want it exactly 250px tall, you can do: 
+        height: 250px; 
+        overflow-y: auto; 
+        (in case text is too long)
+      */
+      height: 250px;
+      overflow-y: auto;
+    }
+  }
+  
+  .profile-picture-container,
+  .summary-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-picture-container {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* The actual picture dimensions */
+  .profile-picture {
+    width: 220px;  /* Adjust if needed */
+    height: 250px; /* Defines the vertical size on large screens */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+  }
+  

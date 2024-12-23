@@ -1,13 +1,102 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>about</ion-title>
+    <ion-title>About</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">about</ion-title>
+      <ion-title size="large">About</ion-title>
     </ion-toolbar>
   </ion-header>
+
+  <!-- Profile Section with Grid -->
+  <ion-grid>
+    <!-- This row will become a flex container -->
+    <ion-row class="profile-row" align-items-stretch>
+      <!-- Picture Column (stacks on top on small screens) -->
+      <ion-col
+        size="12"
+        size-md="4"
+        class="profile-picture-container"
+      >
+        <ion-img
+          class="profile-picture"
+          src="assets/images/selfi.jpg"
+          alt="Nour Kanout"
+        ></ion-img>
+      </ion-col>
+
+      <!-- Summary Column -->
+      <ion-col
+        size="12"
+        size-md="8"
+        class="summary-container"
+      >
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Nour Kanout</ion-card-title>
+            <ion-card-subtitle>Data Scientist & Software Engineer</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p>
+              Jeg er en erfaren programvareingeniør og dataforsker med en variert
+              portefølje av prosjekter. For tiden jobber jeg hos IDENTEC SOLUTIONS,
+              der jeg designer og implementerer maskinlæringsmodeller, som
+              tidsseriemodeller, for å forbedre marine‑ og havneløsninger.
+            </p>
+            <p>
+              Min ekspertise omfatter også bygging og vedlikehold av plattformuavhengige
+              mobilapplikasjoner, utvikling av programvare av høy kvalitet, samt
+              opprettelse av automatiserte bygge‑pipelines. Jeg har omfattende erfaring
+              med Python, TypeScript, Angular, og mer.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- Contact Information -->
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Contact Information</ion-label>
+    </ion-list-header>
+    <ion-item href="tel:+4792515037" detail>
+      <ion-icon name="call" slot="start"></ion-icon>
+      <ion-label>+47 925 150 37</ion-label>
+    </ion-item>
+    <ion-item href="mailto:Nour@kanout.no" detail>
+      <ion-icon name="mail-open" slot="start"></ion-icon>
+      <ion-label>Nour&#64;kanout.no</ion-label>
+    </ion-item>
+    <ion-item href="https://github.com/MNKanout" detail>
+      <ion-icon name="logo-github" slot="start"></ion-icon>
+      <ion-label>GitHub</ion-label>
+    </ion-item>
+    <ion-item href="https://www.linkedin.com/in/nour-kanout/" detail>
+      <ion-icon name="logo-linkedin" slot="start"></ion-icon>
+      <ion-label>LinkedIn</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- Languages -->
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Languages</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        <h2>Norsk</h2>
+        <p>Profesjonell kompetanse</p>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <h2>Engelsk</h2>
+        <p>Profesjonell kompetanse</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
