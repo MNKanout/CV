@@ -30,10 +30,11 @@ import {
   logoLinkedin,
  } from 'ionicons/icons';
 
+
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.page.html',
-  styleUrls: ['./about.page.scss'],
+  selector: 'app-profile',
+  templateUrl: './profile.page.html',
+  styleUrls: ['./profile.page.scss'],
   standalone: true,
   imports: [
     IonCol,
@@ -58,7 +59,7 @@ import {
     FormsModule,
   ]
 })
-export class AboutPage implements OnInit {
+export class ProfilePage implements OnInit {
 
   constructor() {
     addIcons({ 

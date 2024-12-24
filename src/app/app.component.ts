@@ -65,7 +65,7 @@ import {
 })
 export class AppComponent {
   public appPages = [
-    {title: 'Profil', url: 'about', icon: 'person'},
+    {title: 'Profil', url: 'profile', icon: 'person'},
     { title: 'Kompetanse', url: 'home', icon: 'document' },
     { title: 'Ferdigheter', url: 'skills', icon: 'bulb' },
   ];
